@@ -38,7 +38,7 @@ The robot is programmed with logical conditions to navigate and follow walls in 
 
 ## How to Use
 1. Clone or download this repository.
-2. Open the `Maze_Solver_Uno_30x30.ino` file using the **Arduino IDE**.
+2. Open the `Arduino_Uno_R3_Maze_Solver_Robot_30x30_cm.ino` file using the **Arduino IDE**.
 3. Connect your Arduino Uno R3 to your computer via USB.
 4. Select the correct Board (`Arduino Uno`) and COM Port in the IDE.
 5. Click **Upload** to flash the code to the robot.
