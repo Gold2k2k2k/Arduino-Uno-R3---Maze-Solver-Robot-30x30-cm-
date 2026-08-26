@@ -108,24 +108,24 @@ void loop() {
       // Too close to the left wall -> Balance to the right
       balancedright();
       delay(50);
-      Serial.print("   BALANCED TO RIGHT");
+      Serial.print("   Balanced To Right");
     } else if (left_dis > 8 && left_dis <= 15) {
       // Perfect distance from the left wall -> Move straight forward
       forward();
-      Serial.print("   FORWARD");
+      Serial.print("   Forward");
     }
     
   } else if (front_dis >= 5 && left_dis > 4 && left_dis <= 30) {
     // Obstacle in front, but space on the right (deduced by moving right)
     right();
     delay(150);
-    Serial.print("   MOVE RIGHT");
+    Serial.print("   Move Right");
   }
   
   if (left_dis >= 35) {
     // Large gap on the left wall -> Take a left turn
     left();
-    Serial.print("   MOVE LEFT");
+    Serial.print("   Move Left");
   }
 
   // ==========================================
@@ -138,7 +138,7 @@ void loop() {
       // If stuck for 55 consecutive loops, move backward to escape
       back();
       delay(50);
-      Serial.print("    Back force");
+      Serial.print("    Back Force");
       Serial.print(count);
     } else {
       // Increment stuck counter
